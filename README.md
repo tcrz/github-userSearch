@@ -8,5 +8,6 @@ Github user search functionality using Github API. Displays the following result
 - Twitter handle (if available)
 - Bio
 - Github Username
-- Date account was github account was create-
+- Date account was github account was created
+- Name of public repositories
 
