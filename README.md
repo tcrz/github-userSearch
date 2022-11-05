@@ -11,3 +11,5 @@ Github user search functionality using Github API. Displays the following result
 - Date account was github account was created
 - Name of public repositories
 
+Live Demo: https://tcrz.github.io/github-userSearch/
+
