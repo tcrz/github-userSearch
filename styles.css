@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+
+:root {
+  --bg-color: rgb(241, 245, 249);
+  --fg-color: #334155;
+}
+
+h1 {
+  font-size: 190%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  align-items: center;
+  color: var(--fg-color);
+  background-image: url(./images/main-bg.jpg);
+  background-size: cover;
+}
+
+#container {
+  background: #64748b;
+  background: var(--bg-color);
+  background: linear-gradient(#94a3b8, #334155);
+  width: 800px;
+  height: 620px;
+}
+
+.btn {
+  background: var(--fg-color);
+  border-radius: 5px;
+  color: var(--bg-color);;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: .1s ease-in
+}
+
+.btn:hover {
+  background: #475569
+}
+
+/* SEARCH-FIELD */
+#search-form {
+  width: 40%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  margin-top: 0.8em;
+}
+
+#search-input,
+input[type="submit"] {
+  padding: 0.4em;
+  border-radius: 5px;
+}
+
+#search-input {
+  background: var(--bg-color)
+}
+
+
+input[type="submit"] {
+  padding: .6em 1.4em;
+  
+}
+#search-input {
+  font-size: 1em;
+  border: none;
+  outline: none;
+}
+
+/* DEFAULT VIEW */
+.details-box.default {
+  display: block;
+  text-align: center;
+}
+
+#error{
+  font-size: 110%;
+  font-weight: 600;
+  color: red
+}
+
+/* DETAILS-SECTION */
+.details-box {
+  border-radius: 8px;
+  background: var(--bg-color);
+  height: 80%;
+  margin: 1em;
+  padding: 0.8em 1.5em;
+  display: none;
+  flex-direction: column;
+  gap: 1.5em;
+  overflow-y: scroll;
+}
+
+#main-details-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+/* USER MAIN-INFO */
+#base-info {
+  display: flex;
+  gap: 1em;
+  width:70%
+}
+
+#base-info #avatar {
+  border-radius: 50%;
+  width: 25%;
+  border: 3px solid var(--fg-color);
+}
+
+#base-info #info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+#info p {
+  font-size: 90%;
+}
+
+#base-info div {
+  margin: auto 0;
+}
+
+.btn.profile-link {
+  padding: 2%;
+}
+
+/* ABOUT-SECTION */
+#about-section h2,
+#repo-section h2 {
+  border-bottom: 1px solid var(--fg-color);
+  margin-bottom: 0.4em;
+}
+
+#about-section .bio {
+  padding: 0.3em 0;
+}
+
+/* STATS-COUNT SECTION */
+#stats-count {
+  display: flex;
+  justify-content: space-between;
+}
+
+#stats-count div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 80%;
+  width: 30%;
+}
+
+/* REPO-SECTION */
+#repo-section {
+  height: 40%;
+}
+#repo-section #repos-box {
+  overflow-y: scroll;
+  height: 60%;
+}
+
+.details-box::-webkit-scrollbar, #repos-box::-webkit-scrollbar {
+  width: 6px;
+  background:  rgb(202, 198, 198);
+}
+
+.details-box::-webkit-scrollbar-thumb, #repos-box::-webkit-scrollbar-thumb {
+  background-color: var(--fg-color);
+  border-radius: 20px;
+}
+
+/* GITHUB LINK */
+.repo-link {
+  padding: 0 1.5em;
+  color: white
+}
+
+/* RESPOONSIVENESS */
+@media (max-width: 481px){
+  #base-info {
+    width: 100%
+  }
+
+  #stats-count div {
+    font-size: 65%;
+  }
+}
