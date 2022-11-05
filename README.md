@@ -9,7 +9,7 @@ Github user search functionality using Github API. Displays the following result
 - Bio
 - Github Username
 - Date account was github account was created
-- Name of public repositories
+- Names of public repositories
 
 Live Demo: https://tcrz.github.io/github-userSearch/
 
