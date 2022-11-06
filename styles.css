@@ -184,9 +184,10 @@ input[type="submit"] {
 #repo-section {
   height: 40%;
 }
+
 #repo-section #repos-box {
   overflow-y: scroll;
-  height: 60%;
+  height: 80%;
 }
 
 .details-box::-webkit-scrollbar, #repos-box::-webkit-scrollbar {
@@ -216,9 +217,9 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
   #container {
     width: 90%;
-    height: 85%
+    /* height: 95% */
   }
 }
