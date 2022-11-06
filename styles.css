@@ -34,7 +34,7 @@ body {
   background: var(--bg-color);
   background: linear-gradient(#94a3b8, #334155);
   width: 800px;
-  height: 95%;
+  height: 620px;
 }
 
 .btn {
@@ -81,6 +81,7 @@ input[type="submit"] {
 
 input[type="submit"] {
   padding: .6em 1.4em;
+  
 }
 
 #search-input {
@@ -217,6 +218,6 @@ input[type="submit"] {
 
 @media (max-width: 767px){
   #container {
-    width:90%
+    width: 90%;
   }
 }
