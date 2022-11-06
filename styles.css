@@ -184,7 +184,6 @@ input[type="submit"] {
 #repo-section {
   height: 40%;
 }
-
 #repo-section #repos-box {
   overflow-y: scroll;
   height: 80%;
@@ -217,9 +216,9 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   #container {
     width: 90%;
-    /* height: 95% */
+    height: 85%
   }
 }
